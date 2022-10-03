@@ -1,0 +1,131 @@
+import Continue from "../components/Continue";
+import Lesson from "../components/Lesson";
+import LessonLayout from "../components/LessonLayout";
+import LessonSection from "../components/LessonSection";
+import Question, { AnswerKind } from "../components/Question";
+
+# Lesson 0: Prologue — Or, the Drudgery of a Mundane Life
+
+:::LessonSection{#life-on-the-farm}
+![Farm image](Farm.png)
+
+## Life on the Farm
+
+You are a simple farmer. Well, not quite. While your farmland has always been idyllic, the surrounding area has forever been home to a population of somewhat dangerous slime monsters. All farmers are taught from a young age to combat these slimes — it's really not so difficult once you have the knack for it. More tedious than anything!
+
+As it so happens, after a hearty breakfast your mother asks you to perform a routine scout-and-clear. Can never be too careful. You pick up your trusty sword and shield, plenty for the job, and make your way out of the house, barely stopping to say goodbye. You yawn lazily on your way out.
+
+<Continue id="Adventure!">Adventure! Kind of...</Continue>
+
+:::
+:::LessonSection{#on-patrol}
+
+## On Patrol
+
+Leaving the the family farm grounds on the familiar dirt path, you come across your first slime. Here we go.
+
+![Slime image](Slime.png)
+
+You've always found them kind of cute. But now's not the time for that. They can be dangerous, so better to dispatch it quickly. What was the trick to it again? Oh right. Each slime is easily defeated by solving its internal equation. You squint and see this slime's equation as follows:
+
+$$
+3 + 7
+$$
+
+Hmm. Simple enough. You thrust your sword.
+
+export const response =
+  "Yikes! You think to yourself that maybe you should have taken a bit more time to wake up this morning.";
+
+<Question
+  data={[
+    {
+      id: "3",
+      kind: AnswerKind.Incorrect,
+      response,
+    },
+    {
+      id: "7",
+      kind: AnswerKind.Incorrect,
+      response,
+    },
+    {
+      id: "10",
+      kind: AnswerKind.Correct,
+      response:
+        "Hyah! The slime is cloven in two and dissolves into nothingness.",
+    },
+    {
+      id: "12",
+      kind: AnswerKind.Incorrect,
+      response,
+    },
+  ]}
+/>
+
+:::
+:::LessonSection{#multiplication}
+
+You roll your shoulders, feeling the familar ache of getting warmed up. Here comes the next!
+
+$$
+8 \times 4
+$$
+
+Another easy one. A chore really!
+
+{/* <Button>32</Button> */}
+
+:::
+:::LessonSection{#concatenation}
+
+Your thoughts wander as you patrol for the next slime. Is this all there is to life? Surely there must be a better way to rid the area of slimes than walking up to each one and solving its internal equation. You idly fantasize about being a powerful wizard that could eradicate all slimes with the sweep of a hand. How fun that would be. But alas your daydream is interrupted by the next slime appears on the horizon. _Sigh_.
+
+$$
+“Hey\ ” + “you”
+$$
+
+Huh. You don't think you've seen one like this before. But seems like you could probably work it out on the fly... right?
+
+{/* <Button>$“Hey\ you”$</Button> */}
+
+:::
+:::LessonSection{#vector-subtraction}
+
+Slightly unnerved by this last slime, you let your daydreams return. A wizard wouldn't have any trouble with that, surely. You're barely back to these pleasant thoughts before yet another interruption. This one seems almost scary. It's bigger, more complex than the others before. Yikes! What is with them today?!
+
+$$
+(4, 6) - (6, 3)
+$$
+
+Alright, here goes nothing!
+
+{/* <Button>$(-2, 3)$</Button> */}
+
+:::
+:::LessonSection{#enough-slimes}
+
+You stop to catch your breath. This is way more slimes than you’re used. What the heck is up with today? You seat yourself wearily under a nearby tree. The foothills nearby provide a pretty place to rest your eyes. Hang on.
+
+![Cave entrance image](CaveEntrance.png)
+
+What is that odd archway leading into the hill side? You’ve never been to this area before and you’ve never heard anybody mention such a thing. Could be dangerous. Could be worth exploring.
+
+{/* <Button>Venture on</Button> */}
+
+:::
+:::LessonSection{#venture-on}
+
+You summon your courage and head inside.
+
+![Cave from inside image](CaveReverse.png)
+
+You look back once, steel yourself, and head deeper. Inside is a long, winding cave system. Thankfully, you always bring a torch with you, in case you end up out late. Little did you think today would involve spelunking.
+
+After some time navigating natural, smooth walls, the environment changes. It all seems to be constructed here. Stonework is laid into the ground and walls, leading up to some sort of altar. Perched upon it is an open book, which seems illuminated by sunlight cast from a hole in the roof. How mysterious. But it’s just a book. How menacing could it be?
+
+![Cave with a book image](CaveBook.png)
+
+{/* <Button>Look at the book</Button> */}
+
+:::
